@@ -7,12 +7,16 @@
 //
 
 #import "ATAppDelegate.h"
+#import "ATViewController.h"
 
 @implementation ATAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    ATViewController *viewController = [ATViewController new];
+    self.window.rootViewController = viewController;
+    
     return YES;
 }
 							
